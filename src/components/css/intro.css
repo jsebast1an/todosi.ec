@@ -1,14 +1,13 @@
 #intro {
-    background-color: rgb(228, 239, 244);
+    background-color: #0c5374;
     padding: 2rem 4rem;
 }
 
 .intro_info {
     position: relative;
     border-radius: 10px;
-    background-image: url(../../imgs/intro2.jpg);
-    background-position:center;
-    background-size:cover;
+    background: #ffffff url(../../imgs/intro2.jpg) no-repeat center;
+    background-size: cover; 
     height: 470px;
 }
 
@@ -31,4 +30,14 @@
 .intro_info_text a {
     font-weight: bolder;
     margin-top: 2rem;
+}
+.intro_info_text svg {
+    margin-bottom: 1px;
+    margin-left: 4px;
+}
+.intro_info img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 140px;
 }
