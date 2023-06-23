@@ -1,0 +1,51 @@
+#firstSection {
+    position: relative;
+    padding: 2rem 2rem;
+}
+.firstSection_content {
+    /* margen tomando en cuenta el tamaño del shape divider */
+    margin-top: 75px;
+    height: 500px;
+    background: rgb(255, 255, 255);
+}
+.firstSection_content h4 {
+    font-weight: 900;
+    margin:0 0 0 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* shape divider */
+.custom-shape-divider-top-1687540991 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1687540991 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 73px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1687540991 .shape-fill {
+    fill: #0C5374;
+}
+
+/* end */
