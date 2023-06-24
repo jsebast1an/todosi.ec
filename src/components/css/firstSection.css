@@ -4,7 +4,7 @@
 }
 .firstSection_content {
     /* margen tomando en cuenta el tamaño del shape divider */
-    margin-top: 75px;
+    margin-top: 50px;
     height: 500px;
     background: rgb(255, 255, 255);
 }

@@ -7,7 +7,7 @@
 
 .categoria {
     width: 300px;
-    height: 400px;
+    height: 300px;
     margin: 10px 0;
     padding: 20px;
     border-radius: 8px;
@@ -16,12 +16,19 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: rgb(243, 212, 236);
+    background: rgb(253, 149, 229);
+    transition: all 0.3s ease-in;
+}
+.categoria:hover {
+    box-shadow: 4px 13px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.025, 1.025)
 }
 
 .categoria h2 {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-style: italic;
 }
 
 .categoria img {
