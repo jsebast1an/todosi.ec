@@ -14,7 +14,7 @@ function Intro() {
                     <p><strong>paga el producto en la entrega.</strong></p>
                     <a href='/' className='btn btn-primary'>Ir a la tienda <FaArrowAltCircleRight /></a>
                 </div>
-                <img src={logo} />
+                <img src={logo} alt='logo'/>
             </div>
         </div>
     )

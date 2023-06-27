@@ -41,3 +41,59 @@
     top: 0;
     height: 140px;
 }
+
+
+@media screen and (max-width:820px){
+
+    #intro {
+        background-color: #0c5374;
+        padding: 0;
+    }
+    .intro_info {
+        position: relative;
+        border-radius: 0px;
+        background: #ffffff url(../../imgs/intro_cel.png) no-repeat center;
+        background-size: cover; 
+        height: 370px;
+    }
+    
+    .intro_info_text {
+        position: relative;
+        left: 50%;
+        top: 36%;
+        transform: translate(-50%,-50%);
+        width: max-content;
+        padding: 15px 2px;
+    }
+    .intro_info_text p {
+        font-weight: 900;
+        font-size: 1.2rem;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 0;
+        margin: 0;
+        letter-spacing:0.2px;
+    }
+    .intro_info_text strong {
+        color: rgb(54, 65, 153);
+    }
+    .intro_info_text a {
+        font-weight: bolder;
+        margin-top: 2rem;
+    }
+    .intro_info_text svg {
+        margin-bottom: 1px;
+        margin-left: 4px;
+    }
+    .intro_info img {
+        margin-top: 20px;
+        margin-left: 40px;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        height: 100px;
+    }
+    
+    
+    
+}

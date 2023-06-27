@@ -5,25 +5,12 @@
 .firstSection_content {
     /* margen tomando en cuenta el tamaño del shape divider */
     margin-top: 50px;
-    height: 500px;
     background: rgb(255, 255, 255);
 }
 .firstSection_content h4 {
     font-weight: 900;
     margin:0 0 0 2rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* shape divider */
@@ -49,3 +36,21 @@
 }
 
 /* end */
+
+@media screen and (max-width:820px){
+
+    #firstSection {
+        position: relative;
+        padding: 2rem 0rem;
+    }
+    .firstSection_content h4 {
+        font-weight: 900;
+        margin:0 0;
+        text-align: center;
+    }
+    .custom-shape-divider-top-1687540991 .shape-fill {
+        fill: #cddfdf;
+    }
+}
+
+
