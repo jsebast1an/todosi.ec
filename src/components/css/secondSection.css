@@ -1,0 +1,22 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px 5px;
+}
+
+.gallery-item {
+    transition: transform 0.3s, box-shadow 0.3s; /* Agrega transiciones suaves */
+
+    /* Sombra regular */
+    box-shadow: 0 7px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item:hover {
+    /* Efecto de transformación hacia arriba */
+    transform: translateY(-7px);
+  
+    /* Sombra suave en el hover */
+    box-shadow: 0 12px 10px rgba(0, 0, 0, 0.2);
+}
+  
