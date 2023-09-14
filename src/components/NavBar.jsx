@@ -1,4 +1,3 @@
-import * as FaIcons from 'react-icons/fa'
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -12,7 +11,7 @@ import './css/navBar.css'
 function NavBar() {
     return (
         <>
-            <Navbar expand="sm" className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
+            <Navbar expand="sm" className="bg-body-tertiary" fixed="top" bg="dark" data-bs-theme="dark">
                 <Container>
                     <Navbar.Brand href="#home">
                         <img
@@ -27,9 +26,9 @@ function NavBar() {
                     <Navbar.Toggle aria-controls="menu_collapse" />
                     <Navbar.Collapse id="menu_collapse">
                         <Nav className="menu_list">
-                            <Nav.Link href="#home">Inicio</Nav.Link>
-                            <Nav.Link href="#delivery">Envio</Nav.Link>
-                            <Nav.Link href="#contact">Contacto</Nav.Link>
+                            <Nav.Link href="#intro">Inicio</Nav.Link>
+                            <Nav.Link href="#firstSection">Categorías</Nav.Link>
+                            <Nav.Link href="#secondSection">Productos</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

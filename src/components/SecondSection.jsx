@@ -1,5 +1,3 @@
-import product1 from "../imgs/products/AFILADOR-POST.jpg"
-
 import './css/secondSection.css'; // Asegúrate de tener un archivo CSS para estilizar la galería
 
 
@@ -38,7 +36,7 @@ function SecondSection() {
     ];
 
     return (
-        <div className="gallery">
+        <div id='secondSection' className="gallery">
             {imageNames.map((imageName, index) => (
                 <div key={index} className="gallery-item">
                     <img src={`${process.env.PUBLIC_URL}/imgs/products/${imageName}`} 
