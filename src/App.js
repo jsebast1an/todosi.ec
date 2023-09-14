@@ -6,6 +6,7 @@ import Intro from "./components/Intro";
 import FirstSection from "./components/FirstSection";
 import Footer from "./components/Footer";
 import SecondSection from "./components/SecondSection";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <FirstSection />
         <SecondSection />
       </div>
+      <ContactForm />
+
       <Footer />
     </div>
   );

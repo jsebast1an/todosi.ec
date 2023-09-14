@@ -1,0 +1,21 @@
+#contactFormContainer
+{
+    margin-top: 3rem;
+}
+
+.contact_form
+{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:820px) {
+    
+    .floating_label_contact_form
+    {
+        width: 330px;
+        margin: 0 auto;
+    }
+
+
+}
