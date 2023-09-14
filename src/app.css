@@ -9,9 +9,36 @@ li {
 }
 
 /* css */
-/* #app {
-    grid-template-columns: 1fr;
-    grid-template-rows: 34% 66%;
-    grid-template-areas: "";
-    overflow-x: hidden;
-} */
+#dividerSecondSection
+{
+    display: none;
+}
+
+@media screen and (max-width: 820px) {
+    
+    .reverseInMobile
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+   
+    #secondSection
+    {
+        position: relative;
+    }
+
+    .carousel-root
+    {
+        margin-top: 30px;
+
+    }
+
+    #dividerFirstSection
+    {
+        display: none;
+    }
+    #dividerSecondSection
+    {
+        display: block;
+    }
+}

@@ -32,7 +32,11 @@ const Footer = () => {
                     </Col>
                     <Col md={5} className="footer-column">
                         <h5 className="footer-title">Información</h5>
-                        <p className="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p className="footer-text">Nuestra tienda online te ofrece productos de cualquier rubro con envío gratis, págalos en efectivo en la entrega.
+                            <br />
+                            <br />
+                            !Dile NO a las estafas!
+                        </p>
                     </Col>
                     <Col md={3} className="footer-column">
                         <h5 className="footer-title">Páginas</h5>

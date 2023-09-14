@@ -12,8 +12,10 @@ function App() {
     <div id="app"> 
       <NavBar />
       <Intro />
-      <FirstSection />
-      <SecondSection />
+      <div className="reverseInMobile">
+        <FirstSection />
+        <SecondSection />
+      </div>
       <Footer />
     </div>
   );

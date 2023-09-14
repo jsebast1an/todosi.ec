@@ -41,11 +41,11 @@
 
     #firstSection {
         position: relative;
-        padding: 2rem 0rem;
+        padding: 0rem 2rem;
     }
     .firstSection_content h4 {
         font-weight: 900;
-        margin:0 0;
+        margin:0 0 1rem 0;
         text-align: center;
     }
     .custom-shape-divider-top-1687540991 .shape-fill {
