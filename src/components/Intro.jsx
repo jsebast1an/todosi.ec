@@ -1,5 +1,5 @@
 import logo from '../imgs/todosi.png'
-import {FaArrowAltCircleRight} from 'react-icons/fa'
+import * as Fa from 'react-icons/fa'
 /* css */
 import './css/intro.css'
 
@@ -8,11 +8,11 @@ function Intro() {
         <div id='intro'>
             <div className='intro_info'>
                 <div className='intro_info_text'>
-                    <p>¡ENVIOS <strong>GRATIS</strong> A TODO EL PAIS!</p>
+                    <p>¡ENVÍOS <strong>GRATIS</strong> A TODO EL PAÍS!</p>
                     <p>Queremos asegurar la entrega</p>
                     <p>del producto, confía en nosotros y</p>
                     <p><strong>paga el producto en la entrega.</strong></p>
-                    <a href='/' className='btn btn-primary'>Ir a la tienda <FaArrowAltCircleRight /></a>
+                    <a href='/' className='btn btn-dark'>Tienda Online <Fa.FaInstagram /></a>
                 </div>
                 <img src={logo} alt='logo'/>
             </div>
