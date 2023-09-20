@@ -12,7 +12,7 @@ function Intro() {
                     <p>Queremos asegurar la entrega</p>
                     <p>del producto, confía en nosotros y</p>
                     <p><strong>paga el producto en la entrega.</strong></p>
-                    <a href='/' className='btn btn-dark'>Tienda Online <Fa.FaInstagram /></a>
+                    <a href='/' className='btn btn-dark'>Tienda <Fa.FaInstagram /></a>
                 </div>
                 <img src={logo} alt='logo'/>
             </div>

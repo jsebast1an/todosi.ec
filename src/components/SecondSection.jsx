@@ -3,7 +3,7 @@ import {Carousel} from 'react-responsive-carousel';
 import { useState } from 'react';
 
 
-import './css/secondSection.css'; // Asegúrate de tener un archivo CSS para estilizar la galería
+import './css/secondSection.css'; 
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Importa los estilos del carrusel
 
     
@@ -11,10 +11,14 @@ let imageNames = [
     //promo
     { name: 'DESCUENTO-STEP-ONE.jpg', category: 'promo', category_2: ''},
     { name: 'promo-step-one-2.jpg', category: 'promo', category_2: ''},
-    { name: 'PROMO-COCINA.jpg', category: 'promo', category_2: ''},
+    { name: 'promo_cepillo_alisador1.jpg', category: 'promo', category_2: ''},
+    { name: 'promo_cepillo_alisador2.jpg', category: 'promo', category_2: ''},
+    { name: 'PROMO-COCINA.jpg', category: 'promo', category_2: 'cocina'},
+    { name: 'combo_celular.jpg', category: 'promo', category_2: 'celular'},
 
     //belleza
-    { name: 'post-step-one.jpg', category: 'ropa', category_2: ''},
+    { name: 'post-step-one.jpg', category: 'belleza', category_2: ''},
+    { name: 'spray_depilador.jpg', category: 'belleza', category_2: ''},
     { name: 'CEPILLO-ALISADOR.jpg', category: 'belleza', category_2: ''},
     { name: 'DEPILADORA-DE-CRISTAL.jpg', category: 'belleza', category_2: ''},
     { name: 'MAQUINA-CORTAPELO.jpg', category: 'belleza', category_2: 'tecnología'}, //cambiar precio 12.99
@@ -26,6 +30,7 @@ let imageNames = [
     { name: 'LIMPIADOR-DE-VIDRIO-MAGNETICO-POST.jpg', category: 'hogar', category_2: ''}, //cambiar precio 12.99
     { name: 'mini-laser.jpg', category: 'hogar', category_2: 'tecnología'},
     { name: 'MOLINILLO-DE-CAFE-POST.jpg', category: 'hogar', category_2: ''},
+    { name: 'MOLDES-DE-SILICONA.jpg', category: 'hogar', category_2: ''},
     { name: 'ORGANIZADOR-PARA-REFFRI.jpg', category: 'hogar', category_2: ''},
     { name: 'POST-15-DE-ABRIL.jpg', category: 'hogar', category_2: ''},
     { name: 'POST-PICAPORTE.jpg', category: 'hogar', category_2: ''}, //cambiar a 19.99
@@ -39,6 +44,7 @@ let imageNames = [
     
     //celular
     { name: 'promo-celular-portada.jpg', category: 'celular', category_2: ''},
+    { name: 'parlante_sumergible.jpg', category: 'celular', category_2: 'hogar'},
     { name: 'foco-parlante.jpg', category: 'celular', category_2: ''},
     { name: 'protector-de-celular-waterproof.jpg', category: 'celular', category_2: 'hogar'},
     { name: 'microfono.jpg', category: 'celular', category_2: ''}, //cambiar a 14.99
@@ -49,6 +55,7 @@ let imageNames = [
     { name: 'MINI-CAMARA-ESPIA-POST.jpg', category: 'seguridad', category_2: 'hogar'}, //cambiar a 14.99
     
     //niños
+    { name: 'proyector_niños.jpg', category: 'niños y niñas', category_2: 'juguetes'}, //cambiar a 19.99
     { name: 'MINI-CONSOLA-RETRO.jpg', category: 'niños y niñas', category_2: 'juguetes'}, //cambiar a 19.99
 
     //tecnología
@@ -81,11 +88,11 @@ function SecondSection() {
             </div>
 
             <h4>Nuestros productos</h4>
-            
+
             <Bootstrap.Form.Select 
                     onChange={(e) => handleCategoryChange(e.target.value)} 
                     style={{ width: '320px', margin: '1rem auto'}}>
-                <option value="all">Selecciona una opción</option>
+                <option disabled selected value="all">Selecciona una categoría</option>
                 <option value="all">Todos los productos</option>
                 <option value="promo">Promociones Septiembre</option>
                 <option value="belleza">Belleza</option>
@@ -98,6 +105,12 @@ function SecondSection() {
                 <option value="juguetes">Juguetes</option>
             </Bootstrap.Form.Select>
 
+            <div className='text-center my-4'>
+            {
+                selectedCategory === 'all' ? '' : <h3><strong>Categoría:</strong> {selectedCategory}</h3>
+            }
+            </div>
+
             <Carousel 
                 id="productsCarousel"
                 showThumbs={true} 
@@ -106,7 +119,6 @@ function SecondSection() {
                 infiniteLoop={false}
                 centerMode={true}
                 centerSlidePercentage={100}
-                // width={'330px'}
                 >
                     {filteredImages.map((imageName, index) => (
                     <div key={index} className="gallery-item">
